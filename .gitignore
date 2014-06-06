@@ -2,3 +2,4 @@ target/
 target-eclipse/
 .settings/
 .link_to_grails_plugins/
+.classpath
