@@ -184,3 +184,34 @@ grails.plugin.springsecurity.onInteractiveAuthenticationSuccessEvent = { e, appC
    }
 
 grails.assets.bundle=true
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.anand.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.anand.UserUserRole'
+grails.plugin.springsecurity.authority.className = 'com.anand.UserRole'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.anand.user.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.anand.user.UserUserRole'
+grails.plugin.springsecurity.authority.className = 'com.anand.user.UserRole'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
