@@ -96,7 +96,6 @@ environments {
     }
     production {
 //		Image upload path
-		grails.face.detect.image.upload.path = "/home/ubuntu/volcare-image-uploads"
 		grails.serverURL = ""
 		file.upload.path = ""
         grails.logging.jul.usebridge = false
@@ -133,24 +132,15 @@ log4j = {
 
 // Mail configuration
 grails {
-	mail {
-			host = "smtp.gmail.com"
-			port = 465
-			username = "volcare.dev@gmail.com"
-			password = "volcare2014"
-			props = ["mail.smtp.auth":"true",
-				"mail.smtp.socketFactory.port":"465",
-				"mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
-				"mail.smtp.socketFactory.fallback":"false"]
-	}
+	
 }
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.rememberMe.tokenValiditySeconds=31*24*60*60
 grails.plugin.springsecurity.useSwitchUserFilter = true
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.volcare.auth.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.volcare.auth.UserRole'
-grails.plugin.springsecurity.authority.className = 'com.volcare.auth.Role'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.anand.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.anand.UserRole'
+grails.plugin.springsecurity.authority.className = 'com.anand.Role'
 grails.plugin.springsecurity.logout.afterLogoutUrl = '/admin'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/home'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
@@ -159,9 +149,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 
 
 //AWS credential
-grails.plugin.awssdk.accessKey = 'AKIAJ7EAPZW2D5VSBRJQ'
-grails.plugin.awssdk.secretKey = '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'
-grails.amazon.bucketName = "volcare-dev"
 
 //upload file extensions
 file.extensions.image = ['jpg','jpeg','png']
@@ -173,7 +160,7 @@ file.extensions.doc = ['doc','docx']
 grails.plugin.springsecurity.useSecurityEventListener = true
 
 grails.plugin.springsecurity.onInteractiveAuthenticationSuccessEvent = { e, appCtx ->
-	def user = com.volcare.auth.User.get(appCtx.springSecurityService.principal.id)
+	def user = com.anand.auth.User.get(appCtx.springSecurityService.principal.id)
 	
 	com.volcare.auth.User.withTransaction {
 	 if (!user.isAttached())

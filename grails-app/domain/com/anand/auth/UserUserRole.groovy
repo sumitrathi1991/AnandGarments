@@ -1,4 +1,4 @@
-package com.anand.user
+package com.anand.auth
 
 import org.apache.commons.lang.builder.HashCodeBuilder
 
