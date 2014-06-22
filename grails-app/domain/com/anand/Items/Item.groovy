@@ -1,4 +1,4 @@
-package com.anand.Inventory
+package com.anand.Items
 
 class Item {
 	

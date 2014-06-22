@@ -1,6 +1,6 @@
-package com.anand.Inventory
+package com.anand.Items
 
-class InventoryController {
+class ItemController {
 
     def saveItem(){
 		log.debug"in saveItem"
