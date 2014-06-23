@@ -1,0 +1,81 @@
+/* ====== Reset Styles ===== */
+*{margin:0; padding:0; }
+ul,li{ list-style:none;}
+a {text-decoration:none;}
+img{ border:none; outline:none;}
+.clear {clear:both;}
+
+/* ====== Page Section Styles ===== */
+section { width:980px; }
+header{ background:#ff5400; padding: 12px 30px }
+.form-search { width: 271px; position:relative }
+.header-nav li{ display:inline-block; padding-top:5px; padding-right:20px}
+.header-nav li:last-child{ padding-right:0 }
+.header-nav li a{ color:#fff; display:block }
+.header_links {float:right; padding-top:12px;}
+
+
+.header_logo_section {width:100%; margin:0px; border-bottom:1px solid #d9dde2;}
+
+.header_logo_left {width:50%; margin:0px; float:left;}
+
+.logo {padding:20px 0 20px 0px;}
+
+
+.header_logo_right {float:right;}
+
+.right_call {padding-top:22px; }
+
+.right_call h2 {color:#666; font-weight:normal; font-size:26px;}
+
+
+
+.header_menu {width:100%; margin:0px; height:79px;  }
+
+.nav { border-bottom:1px solid #d9dde2; text-align:center }
+
+.nav ul {margin:0px; padding:0px; display:inline-block }
+
+.nav ul li {display:inline;}
+
+.nav ul li a {color:#666; float:left; display:block; padding:21px 24px; font-size:16px; font-family:Sylfaen;  }
+
+.nav ul li a:hover {background:url(../images/menu_hover.jpg) no-repeat bottom center; color:#000f75;}
+
+
+
+.banner {width:100%; margin:0px; height:374px; padding-bottom:24px; } 
+
+
+.featured_bg {background:url(../images/featured_products.jpg) no-repeat; height:18px; text-align:center; }
+
+
+
+.product {width:100%; margin:0px; border-bottom:2px solid #e9ebed; height:320px;}
+
+.pro_img_sec {width:85%; margin:0px; float:left; padding-top:33px;}
+
+.pro_img {float:left; padding:0 31px; width:212px; text-align:center;}
+
+.pro_img p {font-family:Georgia; color:#666; font-weight:bold; font-size:12px;}
+
+.pro_arro_left {float:left; padding-top:110px;}
+
+
+
+.footer {width:100%; margin:0px; height:164px;}
+
+.main_footer {width:100%; margin:0px; padding-top:50px; text-align:center; border-bottom:10px solid #e9ebed; height:114px;}
+
+.main_footer p {font-size:20px; font-family:Georgia, "Times New Roman", Times, serif;  padding-bottom:17px; color:#666;}
+
+.main_footer p span {color:#a1aab6;}
+
+
+.footer_links_section {padding-top:8px; padding-bottom:10px;}
+
+.footer_links_left {float:left; width:32%; font-family:Georgia, "Times New Roman", Times, serif; font-size:10px; color:#a1aab6; }
+
+.footer_links_center {float:right; width:25%; }
+
+.footer_links_center a {font-family:Georgia, "Times New Roman", Times, serif; font-size:10px; color:#888; padding:0 10px; }

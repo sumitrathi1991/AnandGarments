@@ -2,5 +2,7 @@ package com.anand.user
 
 class RegisterController {
 
-    def index() { }
+    def index() { 
+		log.debug"hello"
+	}
 }

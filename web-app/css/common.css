@@ -1,0 +1,10 @@
+.mr-auto{ margin:0 auto}
+.pull-left{ float:left }
+.pull-right{ float:right }
+.text-center{ text-align:center }
+
+body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; }
+
+/* Form Control */
+input#search { background-color: #FFF; border-radius: 10px; border: 1px solid #E2E2E2; box-shadow: none; color: #7E7E7E; float: left; font-size: 90%; height: 20px; line-height: 20px; outline: none; padding: 4px 7px; width: 182px; }
+

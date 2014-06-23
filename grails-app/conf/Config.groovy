@@ -86,7 +86,7 @@ grails.hibernate.cache.queries = false
 environments {
     development {
         grails.logging.jul.usebridge = true
-		grails.serverURL = "http://localhost:8080"
+		grails.serverURL = "http://localhost:8080/"
 		
 		grails.mongo.databaseName = "AnandGarments"
 		grails.mongo.host = "localhost"
